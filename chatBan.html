@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBan - GM Tool 2.1</title>
+    
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body id="main-body">
+    <div class="row container no-gutters pt-3 pb-3">
+        <div class="col-12">
+            <textarea name="username" placeholder="Hráči, každý na nový řádek" id="username" class="form-control"
+                style="min-height: 150px;"></textarea>
+        </div>
+        <div class="col-12 py-2">
+            <input type="number" name="reason" placeholder="Čas (minuty)" id="time" class="form-control" />
+        </div>
+        <div class="col-12">
+            <input name="reason" placeholder="Důvod" id="reason" class="form-control" />
+        </div>
+        <button id="chatBanButton" class="btn btn-secondary my-1 w-100">Zabanovat</button>
+    </div>
+
+</body>
+<script src="chatBan.js"></script>
+
+</html>

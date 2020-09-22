@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Message - GM Tool 2.1</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body id="main-body">
+    <div class="row container no-gutters pt-3 pb-3">
+        <div class="col-12">
+            <textarea name="username" placeholder="Hráči, každý na nový řádek" id="username" class="form-control"
+                style="min-height: 150px;"></textarea>
+        </div>
+        <div class="col-12">
+            <textarea name="message" placeholder="Zpráva" id="message" class="form-control"
+                style="min-height: 150px;"></textarea>
+        </div>
+        <button id="messageButton" class="btn btn-secondary my-1 w-100">Odeslat zprávu</button>
+    </div>
+
+</body>
+<script src="message.js"></script>
+
+</html>

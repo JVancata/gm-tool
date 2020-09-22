@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teleport - GM Tool 2.1</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body id="main-body">
+    <div class="row container no-gutters pt-3 pb-3">
+        <div class="col-6">
+            <input class="form-control my-1" type="number" name="channel" min="1" max="5" placeholder="Channel"
+                id="channel">
+        </div>
+        <div class="col-6">
+            <select class="form-control my-1" name="server" id="server">
+            </select>
+        </div>
+        <div class="col-6">
+            <input class="form-control my-1" type="number" name="map" id="map" placeholder="MapID">
+        </div>
+        <div class="col-6">
+            <select class="form-control my-1" name="maps" id="mapSelect" value="0">
+
+            </select>
+        </div>
+        <div class="col-4">
+            <input class="form-control my-1" type="number" name="x" placeholder="X" id="x">
+        </div>
+        <div class="col-4">
+            <input class="form-control my-1" type="number" name="y" placeholder="Y" id="y">
+        </div>
+        <div class="col-4">
+            <input class="form-control my-1" type="number" name="z" placeholder="Z" id="z">
+        </div>
+        <div class="col-12">
+            <textarea name="charNames" placeholder="Jména hráčů, každé jméno na nový řádek" id="charNames"
+                class="form-control" style="min-height: 150px;"></textarea>
+        </div>
+        <div class="col-12">
+            <select class="form-control my-1" id="locationsSelect">
+
+            </select>
+        </div>
+        <div class="col-6 p-1">
+            <label>Na souřadnice</label>
+            <input type="radio" name="teleportType" id="teleportToPos" value="pos" checked>
+        </div>
+        <div class="col-6 p-1">
+            <label>Na postavu</label>
+            <input type="radio" name="teleportType" id="teleportToUser" value="char">
+        </div>
+        <div class="col-12">
+            <input class="form-control my-1" type="text" name="teleportChar" id="teleportChar" placeholder="Na postavu"
+                type="text">
+        </div>
+        <button id="teleportButton" class="btn btn-secondary my-1 w-100">Teleport</button>
+    </div>
+
+</body>
+<script src="teleport.js"></script>
+
+</html>

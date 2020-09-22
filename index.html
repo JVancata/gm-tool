@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>GM Tool 2.1</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body id="main-body">
+  <div class="row container no-gutters pt-3" id="loginSection">
+    <div class="col-6 py-2">
+      <div class="px-3">
+        <input type="text" name="username" class="form-control" id="username" placeholder="Jméno">
+      </div>
+    </div>
+    <div class="col-6 py-2">
+      <div class="px-3">
+        <button class="btn btn-success w-100" id="loginButton">Připojit</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="px-3">
+        <input type="password" name="password" class="form-control" id="password" placeholder="Heslo">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="px-3">
+        <button class="btn btn-danger w-100" id="logoutButton">Odpojit</button>
+      </div>
+    </div>
+  </div>
+  <div class="row container no-gutters">
+    <div class="col-6">
+      <div class="p-3">
+        <button class="btn btn-secondary w-100" id="announceButton" disabled>Oznámení</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+        <button class="btn btn-secondary w-100" id="monsterButton" disabled>Mobky</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+        <button class="btn btn-secondary w-100" id="messageButton" disabled>Zpráva</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+        <button class="btn btn-secondary w-100" id="teleportButton" disabled>Teleport</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+        <button class="btn btn-secondary w-100" id="chatBanButton" disabled>Chat ban</button>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="p-3">
+        <button class="btn btn-secondary w-100" id="kickButton" disabled>Kick</button>
+      </div>
+    </div>
+    <div id="otherCommunities" class="col-12 px-3">
+
+    </div>
+  </div>
+</body>
+<script src="main-view.js"></script>
+
+</html>
